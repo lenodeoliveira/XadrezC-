@@ -1,0 +1,11 @@
+/home/lennon/Documentos/XadrezC#/bin/Debug/netcoreapp2.2/XadrezC#.deps.json
+/home/lennon/Documentos/XadrezC#/bin/Debug/netcoreapp2.2/XadrezC#.runtimeconfig.json
+/home/lennon/Documentos/XadrezC#/bin/Debug/netcoreapp2.2/XadrezC#.runtimeconfig.dev.json
+/home/lennon/Documentos/XadrezC#/bin/Debug/netcoreapp2.2/XadrezC#.dll
+/home/lennon/Documentos/XadrezC#/bin/Debug/netcoreapp2.2/XadrezC#.pdb
+/home/lennon/Documentos/XadrezC#/obj/Debug/netcoreapp2.2/XadrezC#.csprojAssemblyReference.cache
+/home/lennon/Documentos/XadrezC#/obj/Debug/netcoreapp2.2/XadrezC#.csproj.CoreCompileInputs.cache
+/home/lennon/Documentos/XadrezC#/obj/Debug/netcoreapp2.2/XadrezC#.AssemblyInfoInputs.cache
+/home/lennon/Documentos/XadrezC#/obj/Debug/netcoreapp2.2/XadrezC#.AssemblyInfo.cs
+/home/lennon/Documentos/XadrezC#/obj/Debug/netcoreapp2.2/XadrezC#.dll
+/home/lennon/Documentos/XadrezC#/obj/Debug/netcoreapp2.2/XadrezC#.pdb
