@@ -2,7 +2,8 @@ using System;
 
 namespace tabuleiro
 {
-    class Peca
+    //quando a classe tem pelo menos um método abstrato ela se torna classe abstrata
+    abstract class Peca
     {
 
         public Posicao posicao { get; set; }
@@ -18,12 +19,15 @@ namespace tabuleiro
 
 
         }
-
+         
         public void incrementarQteMovimentos() {
 
             gteMovimentos++; 
 
         }
+       
+
+        public abstract bool[,] movimentosPossiveis();
 
     }
     
