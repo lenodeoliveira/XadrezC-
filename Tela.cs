@@ -7,16 +7,23 @@ namespace XadrezC_
 {
     class Tela
     {
-        public static void imprimirPartida(PartidadeXadrez partida) { 
+        public static void imprimirPartida(PartidadeXadrez partida)
+        {
             imprimirTabuleiro(partida.tab);
             imprimirPecasCapturadas(partida);
             Console.WriteLine();
             Console.WriteLine("Turno: " + partida.turno);
             Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+            if(partida.xeque) {
+            
+                Console.WriteLine("XEQUE!");
+
+            }    
 
         }
 
-        public static void imprimirPecasCapturadas(PartidadeXadrez partida) {
+        public static void imprimirPecasCapturadas(PartidadeXadrez partida)
+        {
             Console.WriteLine("Pecas capturadas: ");
             Console.Write("Brancas: ");
             imprimirConjunto(partida.pecasCapturadas(Cor.Branca));
@@ -27,14 +34,16 @@ namespace XadrezC_
             imprimirConjunto(partida.pecasCapturadas(Cor.Preta));
             Console.ForegroundColor = aux;
             Console.WriteLine();
-        }    
+        }
 
-        public static void imprimirConjunto(HashSet<Peca> conjunto) {
+        public static void imprimirConjunto(HashSet<Peca> conjunto)
+        {
             Console.Write("[");
-            foreach(Peca x in conjunto){
-              Console.Write(x + " ");       
+            foreach (Peca x in conjunto)
+            {
+                Console.Write(x + " ");
 
-            } 
+            }
             Console.Write("]");
 
         }

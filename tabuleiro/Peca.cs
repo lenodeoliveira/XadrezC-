@@ -10,8 +10,9 @@ namespace tabuleiro
         public Cor cor { get; protected set; }
         public int gteMovimentos { get; set; }
         public Tabuleiro tab { get; protected set; }
-        
-        public Peca(Tabuleiro tab, Cor cor) {
+
+        public Peca(Tabuleiro tab, Cor cor)
+        {
             this.posicao = null;
             this.tab = tab;
             this.cor = cor;
@@ -19,27 +20,39 @@ namespace tabuleiro
 
 
         }
-         
-        public void incrementarQteMovimentos() {
 
-            gteMovimentos++; 
+        public void incrementarQteMovimentos()
+        {
+
+            gteMovimentos++;
 
         }
 
-        public bool existeMovimentosPossiveis() {
+        public void decrementarQteMovimentos() {
+
+            gteMovimentos--;
+        }
+        
+
+        public bool existeMovimentosPossiveis()
+        {
 
             bool[,] mat = movimentosPossiveis();
-            for (int i=0; i<tab.linhas; i++) {
-                for(int j=0; j<tab.colunas; j++) {
-                    if(mat[i, j]) {
+            for (int i = 0; i < tab.linhas; i++)
+            {
+                for (int j = 0; j < tab.colunas; j++)
+                {
+                    if (mat[i, j])
+                    {
                         return true;
                     }
                 }
             }
-           return false; 
+            return false;
         }
 
-        public bool podeMoverPara(Posicao pos) {
+        public bool podeMoverPara(Posicao pos)
+        {
 
             return movimentosPossiveis()[pos.linha, pos.coluna];
 
@@ -48,5 +61,5 @@ namespace tabuleiro
         public abstract bool[,] movimentosPossiveis();
 
     }
-    
-} 
+
+}
