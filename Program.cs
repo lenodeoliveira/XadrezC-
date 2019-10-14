@@ -45,18 +45,13 @@ namespace XadrezC_
                         Console.WriteLine(e.Message);
                         Console.ReadLine();
                     }
-
                 }
 
-
-
-                Tela.imprimirTabuleiro(partida.tab);
-
+                Console.Clear();
+                Tela.imprimirPartida(partida);
             }
-            catch (TabuleiroException e)
-            {
-
-                System.Console.WriteLine(e.Message);
+            catch (TabuleiroException e) {
+                Console.WriteLine(e.Message);
 
             }
             Console.ReadLine();
